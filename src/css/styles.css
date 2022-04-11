@@ -1,0 +1,410 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+///// Use type-scale.com for nice (and scaled) font sizes.
+*/
+
+/* 
+COLORS
+
+Main colors: 
+#fff
+#f03e3e
+#d9480f
+#000
+
+Greys: 
+#e6e6e6
+#ccc
+#8d8d8d
+#666
+#4d4d4d
+#363636
+#242424
+
+Titns:
+
+Shades: 
+
+*/
+/* **************************** */
+/* MAIN NAVIGATION BAR */
+/* **************************** */
+
+.main-nav {
+  background-image: linear-gradient(to right, #f03e3e, #d9480f);
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 3.2rem 0;
+}
+
+.logo {
+  height: 6.4rem;
+  justify-self: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-search {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.search-icon {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: #fff;
+
+  transition: all 0.3s;
+}
+
+.search-icon:hover {
+  color: #000;
+}
+
+.advanced-search:link,
+.advanced-search:visited {
+  text-decoration: none;
+  text-transform: capitalize;
+
+  transform: all, 0.3s;
+}
+
+.advanced-search:hover,
+.advanced.search:active {
+  color: #000;
+}
+
+/* **************************** */
+/* SUB NAVIGATION BAR */
+/* **************************** */
+
+.sub-nav-bar {
+  background-color: #000;
+}
+
+.sub-nav-bar {
+  padding: 2.4rem;
+  border-bottom: 0.2rem solid #f03e3e;
+}
+
+.sub-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+  align-items: center;
+  position: relative;
+}
+
+.sub-nav-link {
+  justify-self: center;
+}
+
+.sub-nav-link:last-child {
+  display: flex;
+}
+
+/* **************************** */
+/* POPULAR SERIES SECTION */
+/* **************************** */
+
+.popular-series-section {
+  background-image: url("../img/slider-bg-webp.webp");
+  padding: 9.6rem;
+}
+
+.popular-series {
+  column-gap: 2.4rem;
+  row-gap: 0.2rem;
+  grid-template-rows: auto 1fr;
+  position: relative;
+}
+
+.popular-series::after {
+  position: absolute;
+  content: "POPULAR SERIES";
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.8rem 2.8rem;
+  background-color: #f03e3e;
+  top: -22%;
+  left: 2.7%;
+}
+
+.popular-manga {
+  grid-template-columns: auto 1fr;
+  background-color: rgba(77, 77, 77, 0.5);
+}
+
+.popular-manga-content {
+  padding: 2.4rem 1.2rem;
+}
+
+.pop-manga-title:link,
+.pop-manga-title:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cccccc;
+
+  display: block;
+  margin-bottom: 1.2rem;
+
+  transition: all 0.15s;
+}
+
+.pop-manga-title:hover,
+.pop-manga-title:active {
+  color: #f03e3e;
+}
+
+.chapters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pop-latest-chapters:link,
+.pop-latest-chapters:visited {
+  padding: 0.4rem 0.8rem;
+
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #cccccc;
+  font-weight: 500;
+
+  border: 0.1rem solid #cccccc;
+  border-radius: 1000px;
+
+  transition: all 0.15s;
+}
+
+.pop-latest-chapters:hover,
+.pop-latest-chapters:active {
+  background-color: #f03e3e;
+  color: #fff;
+  border: 0.1rem solid #f03e3e;
+}
+
+/* **************************** */
+/* MORE MANGAS LIST */
+/* **************************** */
+
+.sub-nav-list-item.more-list-items {
+  list-style: none;
+  position: absolute;
+}
+
+.more-list {
+  cursor: pointer;
+  transition: all 0.3;
+}
+
+.more-list-items:after {
+  content: "hiddenArea";
+  opacity: 0;
+
+  display: block;
+  position: relative;
+  height: 300%;
+  width: 35%;
+  left: -47%;
+  top: -1900%;
+}
+
+.more-list-items {
+  list-style: none;
+  position: absolute;
+  top: 250%;
+  left: 0%;
+
+  width: 100%;
+  padding: 3.2rem;
+
+  background-color: #363636;
+  z-index: 100;
+
+  border-top: 0.2rem solid #fff;
+
+  row-gap: 1.2rem;
+}
+
+/* **************************** */
+/* NEW MANGA SECTION */
+/* **************************** */
+
+.new-manga-section {
+  padding: 3.2rem 0;
+  background-color: #242424;
+}
+
+.new-manga-list {
+  list-style: none;
+  margin-top: 3.2rem;
+  gap: 3.2rem;
+  padding-bottom: 4.8rem;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.new-manga-list:last-child {
+  border-bottom: none;
+}
+
+.new-manga-item {
+  list-style: none;
+}
+
+.new-manga-title:link,
+.new-manga-title:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ccc;
+  padding: 0.8rem 0;
+
+  transition: all 0.15s;
+}
+
+.new-manga-title:hover,
+.new-manga-title:active {
+  color: #f03e3e;
+}
+
+.rate {
+  margin-bottom: 1.2rem;
+}
+
+.rates {
+  display: flex;
+  gap: 0.8rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.stars {
+  font-size: 2rem;
+}
+
+.rating {
+  font-size: 1.6rem;
+  align-self: end;
+}
+
+.new-latest-chapters-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.new-latest-chapters-item {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+
+  gap: 0.4rem;
+}
+
+.new-latest-chapters:link,
+.new-latest-chapters:visited {
+  padding: 0.8rem;
+
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #cccccc;
+  font-weight: 500;
+
+  border: 0.1rem solid #8d8d8d;
+  border-radius: 12px;
+
+  transition: all 0.3s;
+}
+
+/* .new-latest-chapters:visited,
+.new-latest-chapters:visited:hover {
+  text-decoration: none;
+  color: #8d8d8d;
+} */
+
+.new-latest-chapters:hover,
+.new-latest-chapters:active {
+  color: #f03e3e;
+}
+
+.latest-update-time {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+/* **************************** */
+/* FOOTER */
+/* **************************** */
+
+.footer {
+  background-color: #363636;
+  padding: 9.6rem 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2.4rem;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.footer-link-disc {
+  margin-left: -1.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #ccc;
+
+  transition: all 0.15s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #f03e3e;
+}
+
+.vert-bar {
+  font-size: 1.6rem;
+}
+
+.discord-icon {
+  font-size: 2rem;
+}
+
+.copyright {
+  color: #8d8d8d;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/general.css" />
+
+    <title>MangaSushi Training</title>
+
+    <script type="module" src="./src/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-nav">
+        <div class="container">
+        <div class="nav-bar">
+          <a href="#">
+            <img
+              src="./src/img/MangaSushi Logo.png"
+              alt="MangaSushi Logo"
+              class="logo"
+            />
+          </a>
+
+          <ul class="nav-links nav-list">
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Archives</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Donations</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#">Discord</a>
+            </li>
+          </ul>
+
+          <ul class="nav-search">
+            <li>
+              <a href="#" class="search-link"> 
+                <ion-icon name="search-circle" class="search-icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="advanced-search ">Advanced</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-nav-bar">
+        <ul class="sub-nav-list container">
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">Romance</a>
+          </li>
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">Comedy</a>
+          </li>
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">Shoujo</a>
+          </li>
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">Drama</a>
+          </li>
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">School Life</a>
+          </li>
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">Shounen</a>
+          </li>
+          <li class="sub-nav-list-item">
+            <a class="sub-nav-link" href="#">Action</a>
+          </li>
+          <li class="sub-nav-list-item more-list"> <span>More &dharr;</span>
+            <ul class="more-list-items grid grid--4-cols hidden "> 
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Adult</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Adventure</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Anime</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Comic</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Cooking</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Doujinshi</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Ecchi</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Fantasy</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Gender Bender</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Harem</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Historical</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Horror</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Josei</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Live Action</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Manga</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Manhua</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Martial Arts</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Mature</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Mecha</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Mystery</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">One Shot</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Psychological</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Sci-fi</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Seinen</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Shoujo Ai</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Shounen Ai</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Slice of Life</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Smut</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Soft Yaoi</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Sports</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Tragedy</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Supernatural</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Webtoon</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Yaoi</a>
+                </li>
+                <li class="more-list-item">
+                  <a href="#" class="more-list-link">Yuri</a>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="popular-series-section">
+          <div class="popular-series grid grid--4-cols  container">
+            <figure class="popular-manga grid">
+              <div class="wrap-img">
+                <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img">
+              </div>
+              <div class="popular-manga-content">
+                <a href="#" class="pop-manga-title">Manga title ######</a>
+                <p class="update-time">April 01, 2022</p>
+    
+                <div class="chapters">
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 01</p>
+                  </a>
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 02</p>
+                  </a>
+                </div>
+              </div>
+            </figure>
+            <figure class="popular-manga grid">
+              <div class="wrap-img">
+                <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img">
+              </div>
+              <div class="popular-manga-content">
+                <a href="#" class="pop-manga-title">Manga title ######</a>
+                <p class="update-time">April 01, 2022</p>
+    
+                <div class="chapters">
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 01</p>
+                  </a>
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 02</p>
+                  </a>
+                </div>
+              </div>
+            </figure>
+            <figure class="popular-manga grid">
+              <div class="wrap-img">
+                <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img">
+              </div>
+              <div class="popular-manga-content">
+                <a href="#" class="pop-manga-title">Manga title ######</a>
+                <p class="update-time">April 01, 2022</p>
+    
+                <div class="chapters">
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 01</p>
+                  </a>
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 02</p>
+                  </a>
+                </div>
+              </div>
+            </figure>
+            <figure class="popular-manga grid">
+              <div class="wrap-img">
+                <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img">
+              </div>
+              <div class="popular-manga-content">
+                <a href="#" class="pop-manga-title">Manga title ######</a>
+                <p class="update-time">April 01, 2022</p>
+    
+                <div class="chapters">
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 01</p>
+                  </a>
+                  <a href="#" class="pop-latest-chapters">
+                    <p>Chapter 02</p>
+                  </a>
+                </div>
+              </div>
+            </figure>
+          </div>
+      </section>
+
+      <!-- NEW MANGA SECTION -->
+      <section class="new-manga-section">
+        <div class="container">
+          <h2 class="heading-secondary"> What's new</h2>
+
+          <div class="new-manga-list grid grid--6-cols ">
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="new-manga-list grid grid--6-cols ">
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="new-manga-list grid grid--6-cols ">
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="new-manga">
+              <li class="new-manga-item">
+                <div class="wrap-img">
+                  <img src="./src/img/sushi placeholder.webp" alt="Manga Cover" class="manga-cover-img new-manga-cover-img">
+                </div>
+                <a href="#" class="new-manga-title">Manga title ### # #</a>
+                <div class="rate">
+                  <p class="rates">
+                    <span class="stars">&starf; &starf; &starf; &starf; &star;</span>
+                    <span class="rating">4.0</span>
+                  </p>
+                </div>
+                <ul class="new-latest-chapters-list">
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class="latest-update-time">April 01, 2022</p>
+                    </li>
+                    <li class="new-latest-chapters-item">
+                      <a href="#" class="latest-chapters new-latest-chapters">
+                        Chapter XX
+                      </a>
+                      <p class=" latest-update-time">April 01, 2022</p>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer-links">
+          <a href="#" class="footer-link footer-link-disc">
+          <ion-icon name="logo-discord" class="discord-icon"></ion-icon>
+        </a>
+
+            <ul class="footer-links-list">
+              <li>
+                <a href="#" class="footer-link">HOME</a>
+              </li>
+              <li> <span class="vert-bar"> &verbar; </span></li>
+              <li>
+                <a href="#" class="footer-link">DONATE</a>
+              </li>
+            </ul>
+            <p class="copyright"> &copy; 2021 Mangasushi. All rights reserved. </p>
+            <p class="copyright"> This is only a copy made for studying purposes. </p>
+        </div>
+
+
+      </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
