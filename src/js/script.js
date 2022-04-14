@@ -4,6 +4,7 @@ import { removeHidden, addHidden, popupMarkup } from "./helpers.js";
 const moreListEl = document.querySelector(".more-list");
 const moreListItemsEl = document.querySelector(".more-list-items");
 const newMangaCoverImgAllEl = document.querySelectorAll(".new-manga-cover-img");
+console.log(moreListItemsEl);
 
 ///////////////////////
 const moreMenu = function () {
@@ -11,9 +12,6 @@ const moreMenu = function () {
     removeHidden(moreListItemsEl);
   });
   moreListEl.addEventListener("mouseleave", function () {
-    addHidden(moreListItemsEl);
-  });
-  moreListItemsEl.addEventListener("mouseleave", function () {
     addHidden(moreListItemsEl);
   });
 };
