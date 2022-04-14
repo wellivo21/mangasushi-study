@@ -1,0 +1,52 @@
+/* **************************** */
+/* NEW MANGA POPUP */
+/* **************************** */
+
+.new-manga {
+  position: relative;
+}
+
+.new-manga-popup {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  padding: 1.6rem;
+  width: 55rem;
+  top: -89%;
+  left: -75%;
+  background-color: #363636;
+  position: absolute;
+  z-index: 9;
+}
+
+.popup-manga-img-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.new-manga-cover-img {
+  width: 85%;
+}
+
+.popup-manga-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #f03e3e;
+}
+
+.new-manga-description {
+  row-gap: 1.2rem;
+}
+
+.popup-question {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.popup-answer {
+  font-size: 1.4rem;
+}
+
+.popup-answer:last-child {
+  grid-column: 1/-1;
+}

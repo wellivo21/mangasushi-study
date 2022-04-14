@@ -217,16 +217,16 @@ Shades:
   transition: all 0.3;
 }
 
-.more-list-items:after {
+.more-list-items::after {
   content: "hiddenArea";
   opacity: 0;
 
   display: block;
   position: relative;
-  height: 300%;
-  width: 35%;
-  left: -47%;
-  top: -1900%;
+  height: 200%;
+  width: 150%;
+  left: -100%;
+  top: -1750%;
 }
 
 .more-list-items {
