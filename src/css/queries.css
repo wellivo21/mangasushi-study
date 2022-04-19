@@ -1,0 +1,153 @@
+/*
+Don't use pixels in media queries. Use em for media queries.
+*/
+
+/**************************/
+/* BELLOW 1305px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 82em) {
+  .sub-nav-list {
+    justify-content: center;
+  }
+  .popular-series {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2.4rem;
+    row-gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .popular-series-tag {
+    max-width: 25%;
+  }
+
+  .new-manga-popup {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+/**************************/
+/* BELLOW 1056px */
+/**************************/
+
+@media (max-width: 66em) {
+  .stars {
+    font-size: 1.6rem;
+  }
+  .rating {
+    font-size: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELLOW 976px */
+/**************************/
+
+@media (max-width: 61em) {
+  html {
+    font-size: 56.25%;
+  }
+  .nav-bar {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .nav-links,
+  .nav-search {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .btn-mobile-nav {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    margin-top: 1rem;
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+
+    border: none;
+    background: inherit;
+    font-size: 3.2rem;
+    color: #fff;
+
+    align-self: center;
+  }
+}
+
+/**************************/
+/* BELLOW 864px */
+/**************************/
+
+@media (max-width: 54em) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .popular-series-tag {
+    max-width: 30%;
+  }
+}
+
+/**************************/
+/* BELLOW 820px */
+/**************************/
+
+@media (max-width: 51em) {
+  /* .sub-nav-link:link {
+    font-size: 1.4rem;
+  } */
+  html {
+    font-size: 50%;
+  }
+  .popular-series-tag {
+    max-width: 35%;
+  }
+}
+
+/**************************/
+/* BELLOW 725px */
+/**************************/
+
+@media (max-width: 46em) {
+  .sub-nav-bar {
+    margin-top: -6.4rem;
+    border-bottom: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .popular-series-tag {
+    justify-self: center;
+    width: 36rem;
+    max-width: 100%;
+  }
+
+  .popular-series {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: auto repeat(4, 1fr); */
+    max-width: 100%;
+  }
+
+  .new-manga-list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  }
+
+  .popular-manga {
+    max-width: 100%;
+    justify-self: center;
+  }
+
+  .chapters {
+    flex-direction: unset;
+  }
+}
