@@ -134,6 +134,10 @@ Don't use pixels in media queries. Use em for media queries.
     color: #f03e3e;
   }
 
+  .mobile-nav-link.nav-link {
+    border-bottom: none;
+  }
+
   .icon-close-nav {
     font-size: 4.8rem;
     transition: all 0.3s;
