@@ -93,9 +93,14 @@ Shades:
 }
 
 .btn-mobile-nav {
+  position: absolute;
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: none;
+}
+
+.mobile-nav-links {
+  position: absolute;
 }
 
 /* **************************** */

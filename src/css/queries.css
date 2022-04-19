@@ -21,6 +21,10 @@ Don't use pixels in media queries. Use em for media queries.
     max-width: 25%;
   }
 
+  .more-list-items::after {
+    left: -60%;
+  }
+
   .new-manga-popup {
     opacity: 0;
     pointer-events: none;
@@ -38,6 +42,10 @@ Don't use pixels in media queries. Use em for media queries.
   }
   .rating {
     font-size: 1.2rem;
+  }
+
+  .more-list-items::after {
+    left: -40%;
   }
 }
 
@@ -64,7 +72,6 @@ Don't use pixels in media queries. Use em for media queries.
   }
 
   .btn-mobile-nav {
-    position: absolute;
     top: 30%;
     right: 0%;
     margin-top: 1rem;
@@ -78,6 +85,63 @@ Don't use pixels in media queries. Use em for media queries.
     color: #fff;
 
     align-self: center;
+    cursor: pointer;
+  }
+
+  .more-list-items::after {
+    left: -20%;
+  }
+
+  /* MOBILE NAV */
+
+  .mobile-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+  }
+
+  .mobile-nav-links {
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+  }
+
+  .close-btn-nav {
+    position: absolute;
+    border: none;
+    top: 4%;
+    right: 2%;
+    background-color: inherit;
+    color: #fff;
+  }
+
+  .mobile-nav-link:link,
+  .mobile-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link:active {
+    color: #f03e3e;
+  }
+
+  .icon-close-nav {
+    font-size: 4.8rem;
+    transition: all 0.3s;
+  }
+
+  .icon-close-nav:hover {
+    color: #f03e3e;
+    cursor: pointer;
   }
 }
 

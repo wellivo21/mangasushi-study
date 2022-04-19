@@ -33,3 +33,7 @@ export const popupMarkup = `
               </div>
             </div>
             `;
+
+export const toggleLockScroll = function () {
+  document.body.classList.toggle("lock-scroll");
+};

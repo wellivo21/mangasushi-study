@@ -1,9 +1,17 @@
-import { removeHidden, addHidden, popupMarkup } from "./helpers.js";
+import {
+  removeHidden,
+  addHidden,
+  popupMarkup,
+  toggleLockScroll,
+} from "./helpers.js";
 
 // Element Selectors
 const moreListEl = document.querySelector(".more-list");
 const moreListItemsEl = document.querySelector(".more-list-items");
 const newMangaCoverImgAllEl = document.querySelectorAll(".new-manga-cover-img");
+const navButtonEl = document.querySelector(".btn-mobile-nav");
+const mobileNavLinksEl = document.querySelector(".mobile-nav-links");
+const closeButtonNavEl = document.querySelector(".close-btn-nav");
 
 ///////////////////////
 const moreMenu = function () {
@@ -30,11 +38,23 @@ const popup = function () {
   });
 };
 
+const navMenu = function () {
+  navButtonEl.addEventListener("click", () => {
+    removeHidden(mobileNavLinksEl);
+    toggleLockScroll();
+  });
+  closeButtonNavEl.addEventListener("click", () => {
+    addHidden(mobileNavLinksEl);
+    toggleLockScroll();
+  });
+};
+
 ///////////////////////////
 // INIT
 const init = function () {
   moreMenu();
   popup();
+  navMenu();
 };
 
 init();
