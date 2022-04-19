@@ -180,7 +180,7 @@ Don't use pixels in media queries. Use em for media queries.
 }
 
 /**************************/
-/* BELLOW 725px */
+/* BELLOW 736px */
 /**************************/
 
 @media (max-width: 46em) {
@@ -217,5 +217,15 @@ Don't use pixels in media queries. Use em for media queries.
 
   .chapters {
     flex-direction: unset;
+  }
+}
+
+/**************************/
+/* BELLOW 725px */
+/**************************/
+
+@media (max-width: 45.3125em) {
+  .main-nav {
+    height: 103.9px;
   }
 }
