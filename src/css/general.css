@@ -168,5 +168,6 @@ html {
 /* LOCK-SCROLL */
 
 .lock-scroll {
+  height: 100%;
   overflow: hidden;
 }
